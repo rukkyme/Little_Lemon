@@ -9,6 +9,7 @@ class Booking(models.Model):
     no_of_guests = models.IntegerField()
     booking_date = models.DateTimeField(default=datetime.now)
     
+    #creating a string representation of the booking instance
     def __str__(self):
         return f"{self.name} - Guests {self.no_of_guests} \n {self.booking_date}"
     
@@ -19,6 +20,7 @@ class Menu(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     inventory = models.IntegerField()
     
+    #creating a string representation of the menu instance
     def __str__(self):
         return f"{self.title} - price: {self.price}"
     
