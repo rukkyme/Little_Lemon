@@ -28,8 +28,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home', views.home, name='home'),
     #path('restaurant/', include('restaurant.urls')),
-    #path('Restaurant/booking/', include(router.urls))
-    path('booking/', include(router.urls)),
-    path('Menu/', include(router.urls))
+    path('Restaurant/', include(router.urls))
+    #path('booking/', include(router.urls)),
+    #path('Menu/', include(router.urls))
 ]
 
